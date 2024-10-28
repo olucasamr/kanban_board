@@ -1,0 +1,44 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(241, 205, 63);
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+} 
+
+.Container {
+    width: 50em;
+    height: 80vh;
+    background-color: rgb(204, 82, 204);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Receptor {
+    background-color: rgb(233, 233, 233);
+    width: 40%;
+    height: 70vh;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.Arrastavel {
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.Arrastavel:hover {
+    background-color: rgb(138, 138, 138);
+    cursor: pointer;
+}
