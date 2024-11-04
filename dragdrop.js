@@ -1,6 +1,7 @@
 
 const elementDrag = document.querySelectorAll(".Arrastavel");
 const colunas = document.querySelectorAll('.Receptor');
+const alternarModo = document.querySelector('.CircleContainer');
 
 
 elementDrag.forEach((element) => {
@@ -24,5 +25,6 @@ colunas.forEach((coluna) => {
         event.target.appendChild(elementoFilho);
     })
 })
+
 
 

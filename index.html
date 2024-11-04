@@ -10,18 +10,38 @@
     <link rel="stylesheet" href="./style.css">
     <title>D&D</title>
 </head>
-<body>
+<body class="corpo">
+    <header class="Cabecalho">
+        <div class="CreateNewColumn"><h2>Criar nova coluna</h2></div>
+        <div class="CircleContainer">
+            <div class="Circle"></div>
+        </div>
+    </header>
     <div class="Container">
         <div class="Receptor">
-            <div draggable="true" id="Element1" class="Arrastavel">
-                <h3>Titulo aleatorio</h3>
-                <p>Alguma coisa para paragrafo</p>
+            <div class="PointsContainer">
+                <h2>Titilo 1</h2>
+                <img class="Menu3Pontos" src="./assets/tres-pontos.png" alt="Menu tres pontos">
+            </div>
+            <div draggable="true" id="Element-0" class="Arrastavel">
+                <input class="Check" type="checkbox">
+                <div>
+                    <h3>Titulo aleatorio</h3>
+                    <p>Alguma coisa para paragrafo</p>
+                </div>
+                <div><img class="MenuHamburguer" src="./assets/cardapio.png" alt=""></div>
             </div>
         </div>
         <div class="Receptor">
+            <div class="PointsContainer">
+                <h2>Titilo 2</h2>
+                <img class="Menu3Pontos" src="./assets/tres-pontos.png" alt="Menu tres pontos">
+            </div>
 
         </div>
     </div>
 </body>
-<script src="./script.js" defer></script>
+<script src="./dragdrop.js" defer></script>
+<script src="./darkmode.js" defer></script>
+<script src="./crud.js" defer></script>
 </html>
