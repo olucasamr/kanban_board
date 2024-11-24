@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.PointsContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.OptReceptor {
+    flex-direction: column;
+    position: absolute;
+    right: 21px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(133, 134, 134);
+}
+
+.Opt {
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(133, 134, 134);
+    border: 1px solid white;
+    color: white;
+}
+
+.Opt:hover{
+    background-color: rgb(208, 208, 208);
+    cursor: pointer;
+}
+
+.ExcludeReceptor {
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(229, 49, 49);
+    border: 1px solid white;
+    color: white;
+}
+
+.ExcludeReceptor:hover {
+    background-color: rgb(255, 89, 89);
+    cursor: pointer;
+}

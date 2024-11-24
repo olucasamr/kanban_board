@@ -7,37 +7,58 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta name="title" content="Drag and drop">
     <meta name="Description" content="Teste da api de draganddrop">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./default.css">
+    <link class="Mode" rel="stylesheet" href="./light_mode.css">
     <title>D&D</title>
 </head>
-<body class="corpo">
+<body>
+
+    <div class="FundoPreto">
+        <div class="DigiteTitulo">
+            <h3>Digite o título da coluna</h3>
+            <input class="TitleDig" type="text">
+            <button class="SubmitTitle">Criar</button>
+        </div>
+   </div>
+
     <header class="Cabecalho">
         <div class="CreateNewColumn"><h2>Criar nova coluna</h2></div>
         <div class="CircleContainer">
             <div class="Circle"></div>
         </div>
     </header>
-    <div class="Container">
-        <div class="Receptor">
-            <div class="PointsContainer">
-                <h2>Titilo 1</h2>
-                <img class="Menu3Pontos" src="./assets/tres-pontos.png" alt="Menu tres pontos">
-            </div>
-            <div draggable="true" id="Element-0" class="Arrastavel">
-                <input class="Check" type="checkbox">
-                <div>
-                    <h3>Titulo aleatorio</h3>
-                    <p>Alguma coisa para paragrafo</p>
-                </div>
-                <div><img class="MenuHamburguer" src="./assets/cardapio.png" alt=""></div>
-            </div>
-        </div>
-        <div class="Receptor">
-            <div class="PointsContainer">
-                <h2>Titilo 2</h2>
-                <img class="Menu3Pontos" src="./assets/tres-pontos.png" alt="Menu tres pontos">
-            </div>
 
+    <div class="corpo">
+        <div class="Container">
+            <div id="Recept-1" class="Receptor">
+                <div class="PointsContainer">
+                    <h2>Titulo 1</h2>
+                    <div class="Menu3Pontos" alt="Menu tres pontos"></div>
+                    <div id="OptRecept-1" class="OptReceptor" style="display: none;">
+                        <button class="Opt">Editar título</button>
+                        <button class="Opt">Criar novo card</button>
+                        <button class="ExcludeReceptor">Excluir quadro</button>
+                    </div>
+                </div>
+                <div draggable="true" id="Element-0" class="Arrastavel">
+                    <input class="Check" type="checkbox">
+                    <div>
+                        <h3>Titulo aleatorio</h3>
+                    </div>
+                    <div><img class="MenuHamburguer" src="./assets/cardapio.png" alt=""></div>
+                </div>
+            </div>
+            <div id="Recept-2" class="Receptor">
+                <div class="PointsContainer">
+                    <h2>Titulo 2</h2>
+                    <div class="Menu3Pontos" alt="Menu tres pontos"></div>
+                    <div id="OptRecept-2" class="OptReceptor" style="display: none;">
+                        <button class="Opt">Editar título</button>
+                        <button class="Opt">Criar novo card</button>
+                        <button class="ExcludeReceptor">Excluir quadro</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
